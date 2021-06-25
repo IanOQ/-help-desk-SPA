@@ -9,5 +9,17 @@
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/screen2']">
             <mat-icon class="sidenav-icon">people</mat-icon> {{ 'Screen2' | translate }}
         </a>
-    </mat-nav-list>
-</div>
+        <a mat-list-item [matMenuTriggerFor]="solicitudes">
+                <mat-icon class="sidenav-icon">people</mat-icon> {{ 'Solicitudes' | translate }}
+               
+        </a>
+       
+        <mat-menu #solicitudes="matMenu">
+            <a mat-menu-item [routerLinkActive]="'active'" [routerLink]="['/solicitudes']">Ingresar solicitud</a>
+            <a mat-menu-item [routerLinkActive]="'active'" [routerLink]="['/consultar-solicitud']">Consultar solicitud</a>
+        </mat-menu>
+    </mat-nav-list>     
+</div>    
+     
+          
+ 
