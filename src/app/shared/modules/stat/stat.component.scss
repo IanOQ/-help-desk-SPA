@@ -10,7 +10,7 @@
 }
 
 .mat-card {
-    color: #fff;
+    color: rgb(12, 66, 97);
     .mat-card-header {
         width: 100%;
     }
@@ -18,7 +18,7 @@
         font-size: 40px !important;
     }
     .mat-card-subtitle {
-        color: #fff;
+        color: rgb(21, 155, 179);
     }
 
     .mat-card-actions {
@@ -31,17 +31,17 @@
 }
 
 .mat-card.danger {
-    background: linear-gradient(60deg, #ec407a, #d81b60);
+    background:linear-gradient(30deg, rgb(42, 59, 214),rgb(36, 90, 207), rgb(80, 121, 245), rgb(7, 29, 228), rgb(11, 70, 235));
 }
 
 .mat-card.warn {
-    background: linear-gradient(60deg, #ffa726, #fb8c00);
+    background:linear-gradient(30deg, rgb(42, 59, 214),rgb(36, 90, 207), rgb(80, 121, 245), rgb(7, 29, 228), rgb(11, 70, 235));
 }
 
 .mat-card.success {
-    background: linear-gradient(60deg, #66bb6a, #43a047);
+    background:linear-gradient(30deg, rgb(42, 59, 214),rgb(36, 90, 207), rgb(80, 121, 245), rgb(7, 29, 228), rgb(11, 70, 235));
 }
 
 .mat-card.info {
-    background: linear-gradient(60deg, #26c6da, #00acc1);
+    background:linear-gradient(30deg, rgb(58, 85, 163), rgb(30, 45, 187), rgb(76, 124, 255), rgb(42, 59, 214),rgb(36, 90, 207));
 }
