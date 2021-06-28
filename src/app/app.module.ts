@@ -14,6 +14,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SolicitudesComponent } from './layout/solicitudes/solicitudes.component';
+import { ConsultarSolicitudComponent } from './layout/consultar-solicitud/consultar-solicitud.component';
+import { SignuComponent } from './signup/signup.component';
 // AoT requires an exported function for factories
 export const createTranslateLoader = (http: HttpClient) => {
     /* for development
@@ -26,7 +29,7 @@ export const createTranslateLoader = (http: HttpClient) => {
 };
 
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, SolicitudesComponent, ConsultarSolicitudComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
