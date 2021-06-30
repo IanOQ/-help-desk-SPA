@@ -17,6 +17,7 @@ import { AppComponent } from './app.component';
 import { SolicitudesComponent } from './layout/solicitudes/solicitudes.component';
 import { ConsultarSolicitudComponent } from './layout/consultar-solicitud/consultar-solicitud.component';
 import { SignuComponent } from './signup/signup.component';
+import { CommentsComponent } from './layout/comments/comments.component';
 // AoT requires an exported function for factories
 export const createTranslateLoader = (http: HttpClient) => {
     /* for development
@@ -29,7 +30,7 @@ export const createTranslateLoader = (http: HttpClient) => {
 };
 
 @NgModule({
-    declarations: [AppComponent, SolicitudesComponent, ConsultarSolicitudComponent],
+    declarations: [AppComponent, SolicitudesComponent, ConsultarSolicitudComponent, CommentsComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
