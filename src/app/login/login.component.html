@@ -30,7 +30,12 @@
             <div fxFlex  fxLayout="row" fxLayout.lt-md="column">
                 <div fxFlexFill>
                     <button mat-raised-button color="primary" class="w-100" (click)="onLogin()">Login</button>
+                    <h6>¿Aún no tienes una cuenta?</h6>
+                    <a  [routerLinkActive]="'active'" [routerLink]="['/signup']">
+                        Registrarse
+                    </a>
                 </div>
+                
             </div>
 
         </form>
