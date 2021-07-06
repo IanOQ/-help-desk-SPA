@@ -4,15 +4,12 @@
             <mat-icon class="sidenav-icon">dashboard</mat-icon> {{ 'Inicio' | translate }}
         </a>
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/screen1']">
-            <mat-icon class="sidenav-icon bg-orange">build</mat-icon> {{ 'Screen1' | translate }}
+            <mat-icon class="sidenav-icon bg-orange">build</mat-icon> {{ 'Solicitudes' | translate }}
         </a>
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/screen2']">
-            <mat-icon class="sidenav-icon">people</mat-icon> {{ 'Screen2' | translate }}
+            <mat-icon class="sidenav-icon">people</mat-icon> {{ 'Consulta de solicitudes' | translate }}
         </a>
-        <a mat-list-item [matMenuTriggerFor]="solicitudes">
-                <mat-icon class="sidenav-icon">people</mat-icon> {{ 'Solicitudes' | translate }}
-               
-        </a>
+        
        
         <mat-menu #solicitudes="matMenu">
             <a mat-menu-item [routerLinkActive]="'active'" [routerLink]="['/section1']">Ingresar solicitud</a>

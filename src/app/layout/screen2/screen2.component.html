@@ -1,3 +1,41 @@
-<p>
-  screen2 works!
-</p>
+<!--table class="table" *ngIf="students"-->
+<table class="table">
+  <thead>
+      <tr>
+          <th>No. Solicitud</th>
+          <th>Servicio</th>
+          <th>Fecha y hora</th>
+          <th>Estado</th>
+          <th>Comentario</th>
+          <th>Soportista</th>
+        </tr>
+  </thead>
+  <tbody>
+
+      <tr ><!--tr>*ngFor="let s of students; let i=index;"-->
+    
+        <!--td>{{ s.id  }}</td>
+        <td>{{ s.name  }}</td>
+        <td>{{ s.email  }}</td>
+        <td>{{ s.nationalityName  }}</td>
+        <td>{{ s.majorName  }}</td-->
+    
+        <!--td>
+          <a [routerLink]="['/student-details/', s.id]"> Detail </a>
+          <a [routerLink]="['/student-update/', s.id]"> Edit </a>
+          <a [routerLink]="" (click)="delete(s.id)"> Delete </a>
+      
+        </td-->
+        </tr>
+    
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-primary btn-lg">Detalles</button>
+  <button type="button" class="btn btn-primary btn-lg">Comentar</button>
+  
+
+  
+   
+
+
+  

@@ -9,6 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class TopnavComponent implements OnInit {
     public pushRightClass: string;
+     now: Date;
 
     constructor(public router: Router, private translate: TranslateService) {
         this.router.events.subscribe(val => {
@@ -20,6 +21,23 @@ export class TopnavComponent implements OnInit {
 
     ngOnInit() {
         this.pushRightClass = 'push-right';
+
+this.now = new Date();
+ 
+    setInterval(() => {
+ 
+      this.now = new Date();
+ 
+    }, 1000);
+ 
+
+
+
+  
+
+
+
+
     }
 
     isToggled(): boolean {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-screen2',
@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./screen2.component.scss']
 })
 export class Screen2Component implements OnInit {
+  now: Date;
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
+
+
+
+
+
+
 }
+
