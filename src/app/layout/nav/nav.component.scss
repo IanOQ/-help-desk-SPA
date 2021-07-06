@@ -13,9 +13,17 @@
 }
 
 .sidenav-icon {
+    font-family: fantasy;
     text-decoration: none;
+    color: aqua;
     padding: 0 10px;
 }
+
+.bg-orange {
+    background-color: #F68300;
+    color: #fff;
+}
+
 
 .nav-spacer {
     flex: 1 1 auto;
