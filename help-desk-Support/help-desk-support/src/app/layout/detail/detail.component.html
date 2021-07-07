@@ -1,0 +1,45 @@
+<div>
+    <h1 class="title centered">
+
+      Detalle de la solicitud
+
+    </h1>
+</div>
+<br> <br/> 
+
+<div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>No. Solicitud</th>
+            <th>Descripción</th>
+            <th>Fecha y hora</th>
+            <th>Estado</th>
+            <th>Comentarios</th>
+            <th>Agregar Comentario</th>
+          </tr>
+    </thead>
+    <tbody>
+  
+        <tr ><!--tr>*ngFor="let s of students; let i=index;"-->
+      
+          <!--td>{{ s.id  }}</td>
+          <td>{{ s.name  }}</td>
+          <td>{{ s.email  }}</td>
+          <td>{{ s.nationalityName  }}</td>
+          <td>{{ s.majorName  }}</td-->
+      
+          <!--td>
+            <a [routerLink]="['/student-details/', s.id]"> Nuevo </a>
+
+          </td-->
+          </tr>
+      
+      </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary add-margin" [routerLinkActive]="'active'" [routerLink]="['/comments']">
+        Nuevo
+    </button>
+</div>
+    
+    
