@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CommentsComponent } from './comments/comments.component';
 import { DetailComponent } from './detail/detail.component';
 
 import { LayoutComponent } from './layout.component';
@@ -31,7 +32,12 @@ const routes: Routes = [
             {
                 path: 'detail',
                 component: DetailComponent
-            }
+            },
+            {
+                path: 'comments',
+                component: CommentsComponent
+            },
+
 
         ]
     }

@@ -9,6 +9,7 @@ import { LayoutComponent } from './layout.component';
 import { NavComponent } from './nav/nav.component';
 import { Screen2Component } from './screen2/screen2.component';
 import { DetailComponent } from './detail/detail.component';
+import { CommentsComponent } from './comments/comments.component';
 
 @NgModule({
     imports: [
@@ -23,7 +24,8 @@ import { DetailComponent } from './detail/detail.component';
         NavComponent,
         TopnavComponent,
         SidebarComponent,
-        DetailComponent
+        DetailComponent,
+        CommentsComponent
     ]
 
 })
