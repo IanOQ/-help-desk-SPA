@@ -1,15 +1,36 @@
 <div class="login-page">
     <div class="content">
-        <!-- <h1 class="app-name">Sb Admin Material</h1> -->
         <form class="login-form" fxFlex  >
             <div class="text-center">
-                <h2 class="app-name">TeleAtlántico</h2>
-                <h4 class="app-name">Registrarse</h4>
+                <h5 class="app-name">Registrarse</h5>
+            </div>
+            <div class="form-row">
+                <div class="col">
+            <div fxFlex  fxlayout="row" fxlayout.lt-md="column">
+                <div fxFlexFill>
+                    <mat-form-field class="w-100">
+                        <input matInput placeholder="Nombre">
+                    </mat-form-field>
+                </div>
             </div>
             <div fxFlex  fxlayout="row" fxlayout.lt-md="column">
                 <div fxFlexFill>
                     <mat-form-field class="w-100">
-                        <input matInput placeholder="Email">
+                        <input matInput placeholder="Primer Apellido">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxFlex  fxlayout="row" fxlayout.lt-md="column">
+                <div fxFlexFill>
+                    <mat-form-field class="w-100">
+                        <input matInput placeholder="Segundo Apellido">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxFlex  fxlayout="row" fxlayout.lt-md="column">
+                <div fxFlexFill>
+                    <mat-form-field class="w-100">
+                        <input matInput placeholder="Correo electrónico">
                     </mat-form-field>
                 </div>
             </div>
@@ -20,14 +41,48 @@
                     </mat-form-field>
                 </div>
             </div>
+            <div fxFlex  fxLayout="row" fxLayout.lt-md="column">
+                <div fxFlexFill>
+                    <mat-form-field class="w-100">
+                        <input matInput  placeholder="Dirección física">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxFlex  fxlayout="row" fxlayout.lt-md="column">
+                <div fxFlexFill>
+                    <mat-form-field class="w-100">
+                        <input matInput placeholder="Teléfono">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxFlex  fxlayout="row" fxlayout.lt-md="column">
+                <div fxFlexFill>
+                    <mat-form-field class="w-100">
+                        <input matInput placeholder="Otro contacto">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxFlex  fxlayout="row" fxlayout.lt-md="column">
+                 <mat-label>Servicios</mat-label>
+                 <div>
+                    <mat-checkbox class="example-margin add-margin" color="primary"> Telefonía </mat-checkbox>
+                    <mat-checkbox class="example-margin add-margin" color="primary"> Cable </mat-checkbox>
+                    <mat-checkbox class="example-margin add-margin" color="primary"> Internet </mat-checkbox>
+                 </div>
 
+            </div>
+            <br> <br/> 
             <div fxFlex  fxLayout="row" fxLayout.lt-md="column">
                 <div fxFlexFill>
                     <button mat-raised-button color="primary" class="w-100" (click)="onSignup()">Registrarse</button>
-                    <h6>¿Ya tienes una cuenta?</h6><a  [routerLinkActive]="'active'" [routerLink]="['/login']"> Ingresar</a>
+                    <p>¿Ya tienes una cuenta?
+                        <a  [routerLinkActive]="'active'" [routerLink]="['/login']"> Ingresar</a>
+                      </p>
+ 
                 </div>
             </div>
-
+        </div>
+    </div>
         </form>
     </div>
 </div>

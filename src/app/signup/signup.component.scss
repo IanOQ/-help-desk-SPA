@@ -13,6 +13,7 @@
             margin-top: 0px;
             padding-bottom: 10px;
             font-size: 32px;
+            color: #004f92;
         }
         .login-form {
             padding: 40px;
@@ -36,7 +37,7 @@
     }
     &:before {
         content: '';
-        background: #3f51b5;
+        background: #004f92;
         position: absolute;
         top: 50%;
         left: 0;
@@ -49,4 +50,7 @@
 }
 .w-100 {
     width: 100%;
+}
+.add-margin {
+    margin-right: 10px
 }
