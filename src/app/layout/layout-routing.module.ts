@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ConsultarSolicitudComponent } from './consultar-solicitud/consultar-solicitud.component';
 import { DetailComponent } from './detail/detail.component';
 
 import { LayoutComponent } from './layout.component';
 import { Screen1Component } from './screen1/screen1.component';
 import { Screen2Component } from './screen2/screen2.component';
-import { SolicitudesComponent } from './solicitudes/solicitudes.component';
+
 
 const routes: Routes = [
     {
@@ -28,14 +27,6 @@ const routes: Routes = [
             {
                 path: 'screen2',
                 component: Screen2Component
-            },
-            {
-                path: 'solicitudes',
-                component: SolicitudesComponent
-            },
-            {
-                path: 'consultar-solicitud',
-                component: ConsultarSolicitudComponent
             },
             {
                 path: 'detail',
