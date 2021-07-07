@@ -1,45 +1,102 @@
-<div>
-    <h1 class="title centered">
 
-      Detalle de la solicitud
+<section>
+  <mat-card>
+      <mat-card-title class="title">Detalles del reporte</mat-card-title>
+      <mat-card-content>
+          <mat-label>No. Solicitud:</mat-label>
+          <br><br/>
+          <mat-label>Descripción:</mat-label>
+          <br><br/>
+          <mat-label>Fecha y hora:</mat-label>
+          <br><br/>
+          <mat-label>Estado:</mat-label>
+          <br><br/>
+          <mat-label>Soportista asignado:</mat-label>
+      </mat-card-content>
+  </mat-card>
+</section>
 
-    </h1>
+<section class="add-margin">
+<div class="chat-panel card card-default">
+  <div class="card-header">
+      <i class="fa fa-comments fa-fw"></i>
+        Comentarios
+  <div class="card-body">
+      <ul class="chat">
+          <li class="left clearfix">
+              <span class="chat-img pull-left">
+                  <img alt="User Avatar" class="img-circle image" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" />
+              </span>
+              <div class="chat-body clearfix">
+                  <div class="header">
+                      <strong class="primary-font">Jack Sparrow</strong>
+                      <small class="pull-right text-muted"> <i class="fa fa-clock-o fa-fw"></i> 12 mins ago </small>
+                  </div>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis
+                      ullamcorper ligula sodales.
+                  </p>
+              </div>
+          </li>
+          <li class="left clearfix">
+              <span class="chat-img pull-left">
+                  <img alt="User Avatar" class="img-circle image" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" />
+              </span>
+              <div class="chat-body clearfix">
+                  <div class="header">
+                      <strong class="primary-font">Jack Sparrow</strong>
+                      <small class="pull-right text-muted"> <i class="fa fa-clock-o fa-fw"></i> 12 mins ago </small>
+                  </div>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis
+                      ullamcorper ligula sodales.
+                  </p>
+              </div>
+          </li>
+          <li class="left clearfix">
+              <span class="chat-img pull-left">
+                  <img alt="User Avatar" class="img-circle image" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" />
+              </span>
+              <div class="chat-body clearfix">
+                  <div class="header">
+                      <strong class="primary-font">Jack Sparrow</strong>
+                      <small class="pull-right text-muted"> <i class="fa fa-clock-o fa-fw"></i> 12 mins ago </small>
+                  </div>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis
+                      ullamcorper ligula sodales.
+                  </p>
+              </div>
+          </li>
+          <li class="left clearfix">
+              <span class="chat-img pull-left">
+                  <img alt="User Avatar" class="img-circle image" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" />
+              </span>
+              <div class="chat-body clearfix">
+                  <div class="header">
+                      <strong class="primary-font">Jack Sparrow</strong>
+                      <small class="pull-right text-muted"> <i class="fa fa-clock-o fa-fw"></i> 12 mins ago </small>
+                  </div>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis
+                      ullamcorper ligula sodales.
+                  </p>
+              </div>
+          </li>
+      </ul>
+  </div>
+  <!-- /.card-body -->
+  <div class="card-footer">
+      <div class="input-group">
+          <input class="form-control input-sm" id="btn-input" placeholder="Nuevo comentario..." type="text" />
+          <span class="input-group-btn">
+              <button class="btn btn-warning btn-sm" id="btn-chat">
+                 Agregar
+              </button>
+          </span>
+      </div>
+  </div>
+  <!-- /.card-footer -->
 </div>
-<br> <br/> 
-
-<div>
-<table class="table">
-    <thead>
-        <tr>
-            <th>No. Solicitud</th>
-            <th>Descripción</th>
-            <th>Fecha y hora</th>
-            <th>Estado</th>
-            <th>Comentarios</th>
-            <th>Agregar Comentario</th>
-          </tr>
-    </thead>
-    <tbody>
-  
-        <tr ><!--tr>*ngFor="let s of students; let i=index;"-->
-      
-          <!--td>{{ s.id  }}</td>
-          <td>{{ s.name  }}</td>
-          <td>{{ s.email  }}</td>
-          <td>{{ s.nationalityName  }}</td>
-          <td>{{ s.majorName  }}</td-->
-      
-          <!--td>
-            <a [routerLink]="['/student-details/', s.id]"> Nuevo </a>
-
-          </td-->
-          </tr>
-      
-      </tbody>
-    </table>
-    <button type="submit" class="btn btn-primary add-margin" [routerLinkActive]="'active'" [routerLink]="['/comments']">
-        Nuevo
-    </button>
 </div>
-    
-    
+</section>

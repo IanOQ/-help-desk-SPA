@@ -2,7 +2,7 @@
 <div>
   <h1 class="title centered">
 
-    Detalle del reporte
+    Lista del reportes
 
   </h1>
 </div>
@@ -28,7 +28,12 @@
   <tbody>
 
       <tr ><!--tr>*ngFor="let s of students; let i=index;"-->
-          <td> 12345</td>
+        <!--td>{{ s.id  }}</td>
+        <td>{{ s.name  }}</td>
+        <td>{{ s.email  }}</td>
+        <td>{{ s.nationalityName  }}</td>
+        <td>{{ s.majorName  }}</td-->
+       <td> 12345</td>
         <td> Cable</td>
         <td> 7/7/21</td>
         <td>En espera</td>
@@ -37,25 +42,16 @@
       
         </td>
        
-        <!--td>{{ s.id  }}</td>
-        <td>{{ s.name  }}</td>
-        <td>{{ s.email  }}</td>
-        <td>{{ s.nationalityName  }}</td>
-        <td>{{ s.majorName  }}</td-->
+
     
-        <!--td>
-          <a [routerLink]="['/student-details/', s.id]"> Ver </a>
-      
-        </td-->
+
         </tr>
     
     </tbody>
   </table>
  
   <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
-  <button type="button" class="btn btn-primary btn-lg"  [routerLinkActive]="'active'" [routerLink]="['/detail']">
-    Detalles
-  </button>
+
   <!--button type="button" class="btn btn-primary btn-lg">Comentar</button-->
 </div>
 
