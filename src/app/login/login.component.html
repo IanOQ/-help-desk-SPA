@@ -7,15 +7,20 @@
             </div>
             <div fxFlex  fxlayout="row" fxlayout.lt-md="column">
                 <div fxFlexFill>
-                    <mat-form-field class="w-100">
-                        <input matInput placeholder="Correo electrónico">
+                    <mat-form-field class="w-100" appearance="fill">
+                        <mat-label>Correo electrónico</mat-label>
+                        <input matInput type="email">
                     </mat-form-field>
                 </div>
             </div>
             <div fxFlex  fxLayout="row" fxLayout.lt-md="column">
                 <div fxFlexFill>
-                    <mat-form-field class="w-100">
-                        <input matInput type="password" placeholder="Contraseña">
+                    <mat-form-field class="w-100" appearance="fill">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
                     </mat-form-field>
                 </div>
             </div>

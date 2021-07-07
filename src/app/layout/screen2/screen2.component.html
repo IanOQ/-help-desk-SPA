@@ -1,3 +1,18 @@
+
+<div>
+  <h1 class="title centered">
+
+    Lista de solicitudes
+
+  </h1>
+</div>
+<br> <br/> 
+
+<div>
+  <mat-form-field>
+    <mat-label>Buscar</mat-label>
+    <input matInput (keyup)="filtrar($event)" placeholder="buscar">
+  </mat-form-field>
 <!--table class="table" *ngIf="students"-->
 <table class="table">
   <thead>
@@ -6,14 +21,22 @@
           <th>Servicio</th>
           <th>Fecha y hora</th>
           <th>Estado</th>
-          <th>Comentario</th>
-          <th>Soportista</th>
+          <th>Detalles</th>
+          <!--th>Soportista</th-->
         </tr>
   </thead>
   <tbody>
 
       <tr ><!--tr>*ngFor="let s of students; let i=index;"-->
-    
+          <td> 12345</td>
+        <td> Cable</td>
+        <td> 7/7/21</td>
+        <td>En espera</td>
+         <td>
+          <a [routerLink]="['/detail']"> Ver </a>
+      
+        </td>
+       
         <!--td>{{ s.id  }}</td>
         <td>{{ s.name  }}</td>
         <td>{{ s.email  }}</td>
@@ -21,18 +44,21 @@
         <td>{{ s.majorName  }}</td-->
     
         <!--td>
-          <a [routerLink]="['/student-details/', s.id]"> Detail </a>
-          <a [routerLink]="['/student-update/', s.id]"> Edit </a>
-          <a [routerLink]="" (click)="delete(s.id)"> Delete </a>
+          <a [routerLink]="['/student-details/', s.id]"> Ver </a>
       
         </td-->
         </tr>
     
     </tbody>
   </table>
-  <button type="button" class="btn btn-primary btn-lg">Detalles</button>
-  <button type="button" class="btn btn-primary btn-lg">Comentar</button>
-  
+ 
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  <button type="button" class="btn btn-primary btn-lg"  [routerLinkActive]="'active'" [routerLink]="['/detail']">
+    Detalles
+  </button>
+  <!--button type="button" class="btn btn-primary btn-lg">Comentar</button-->
+</div>
+
 
   
    

@@ -100,7 +100,9 @@
         <br> <br/> 
         <div class="centered">
           <button type="submit" class="btn btn-primary mr-1 add-margin">Enviar</button>
-          <button type="submit" class="btn btn-primary add-margin">Cancelar</button>
+          <button type="submit" class="btn btn-primary add-margin" [routerLinkActive]="'active'" [routerLink]="['/dashboard']">
+            Cancelar
+          </button>
         </div>
       </div>
     </form>​

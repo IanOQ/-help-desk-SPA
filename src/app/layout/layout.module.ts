@@ -8,6 +8,7 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
 import { NavComponent } from './nav/nav.component';
 import { Screen2Component } from './screen2/screen2.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
     imports: [
@@ -21,7 +22,8 @@ import { Screen2Component } from './screen2/screen2.component';
         LayoutComponent,
         NavComponent,
         TopnavComponent,
-        SidebarComponent
+        SidebarComponent,
+        DetailComponent
     ]
 
 })
