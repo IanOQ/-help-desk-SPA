@@ -1,0 +1,26 @@
+*Resumen Indicaciones Proyecto* 
+
+** El Proyecto consiste en hacer una Aplicación como tipo Chat y la otra De Soporte para Consultas, que permita a la empresa resolver las dudas de los clientes.
+   Centralizar las solicitudes de los clientes y su respectiva atención por parte de los usuarios de soporte. 
+   La idea es asegurar trazabilidad a las solicitudes ingresadas, desde que ingresan hasta su resolución final.
+** Se desarrollarían 1 o 2 Frentes (propios que se pueden ir consultando con el profe) más distintas API´s con .NET y Springboot que operarían para user y support.
+
+
+** Consultas
+	- Preguntar si hay avances.
+	- Preguntar sobre los temas extras que hay que hacer.
+	- Preguntar sobre GitLab como herramienta de integración Continua.
+	- Consulta respecto a la arquitectura, son 2 Apps que se conectan asi como las API´s ¿o cómo? Que explique el gráfico.
+	- Dudas con las opraciones exactas de cada Aplicación.
+
+** División Trabajo para Frontened (Diseño):
+	- Angie: Frontened
+	- Ian: Bases de Datos.
+	- Melissa: Frontend. 
+	- Mari: Bases de Datos.
+
+** Backend
+	- API Springboot (en desarrollo).
+	- API de .NET.
+	- Conectar API´s y aplicaciones con el frente
+
