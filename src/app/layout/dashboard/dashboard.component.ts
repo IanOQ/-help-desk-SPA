@@ -39,7 +39,7 @@ export class DashboardComponent implements OnInit {
                 place: 'Telefonía',
                 description:
                     // tslint:disable-next-line:max-line-length
-                    'Con nuestros planes de datos te podras comunicar a todo el país'
+                    ' Con nuestros planes de datos te podras comunicar con tus familiares y amigos en todo el país'
             },
             {
                 imgSrc: 'assets/images/tele.png',
