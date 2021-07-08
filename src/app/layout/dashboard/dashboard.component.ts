@@ -16,13 +16,13 @@ export interface PeriodicElement {
 })
 export class DashboardComponent implements OnInit {
     displayedColumns = ['position', 'name', 'weight', 'symbol'];
-   
+
     places: Array<any> = [];
 
     applyFilter(filterValue: string) {
         filterValue = filterValue.trim(); // Remove whitespace
         filterValue = filterValue.toLowerCase(); // MatTableDataSource defaults to lowercase matches
-      
+
     }
 
     constructor() {
@@ -39,7 +39,7 @@ export class DashboardComponent implements OnInit {
                 place: 'Telefonía',
                 description:
                     // tslint:disable-next-line:max-line-length
-                    'Cuando nuestros planes de datos te podras comunicar a todo el país'
+                    'Con nuestros planes de datos te podras comunicar a todo el país'
             },
             {
                 imgSrc: 'assets/images/tele.png',
@@ -47,7 +47,7 @@ export class DashboardComponent implements OnInit {
                 description:
                     // tslint:disable-next-line:max-line-length
                     ' Con nuestros planes de televisión tendras acceso a miles de canales'
-                
+
             }
         ];
     }
