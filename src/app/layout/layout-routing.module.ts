@@ -2,9 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommentsComponent } from './comments/comments.component';
 import { DetailComponent } from './detail/detail.component';
-
+import { registerComponent } from './register/register.component';
 import { LayoutComponent } from './layout.component';
-import { Screen1Component } from './screen1/screen1.component';
 import { Screen2Component } from './screen2/screen2.component';
 
 
@@ -21,10 +20,7 @@ const routes: Routes = [
                 path: 'dashboard',
                 loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
             },
-            {
-                path: 'screen1',
-                loadChildren: () => import('./screen1/screen1.module').then(m => m.Screen1Module)
-            },
+
             {
                 path: 'screen2',
                 component: Screen2Component
@@ -37,7 +33,10 @@ const routes: Routes = [
                 path: 'comments',
                 component: CommentsComponent
             },
-
+            {
+                path: 'register',
+                component: registerComponent
+            },
 
         ]
     }
@@ -48,3 +47,4 @@ const routes: Routes = [
     exports: [RouterModule],
 })
 export class LayoutRoutingModule {}
+

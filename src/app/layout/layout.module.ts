@@ -9,6 +9,7 @@ import { LayoutComponent } from './layout.component';
 import { NavComponent } from './nav/nav.component';
 import { Screen2Component } from './screen2/screen2.component';
 import { DetailComponent } from './detail/detail.component';
+import { registerComponent } from './register/register.component';
 import { CommentsComponent } from './comments/comments.component';
 
 @NgModule({
@@ -25,7 +26,8 @@ import { CommentsComponent } from './comments/comments.component';
         TopnavComponent,
         SidebarComponent,
         DetailComponent,
-        CommentsComponent
+        CommentsComponent,
+        registerComponent
     ]
 
 })

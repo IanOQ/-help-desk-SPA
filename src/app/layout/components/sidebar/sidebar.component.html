@@ -3,14 +3,14 @@
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/dashboard']">
             <mat-icon class="sidenav-icon">dashboard</mat-icon> {{ 'Inicio' | translate }}
         </a>
-        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/screen1']">
-            <mat-icon class="sidenav-icon bg-orange">library_add</mat-icon> {{ 'Nueva solicitud' | translate }}
-        </a>
+       
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/screen2']">
-            <mat-icon class="sidenav-icon">receipt_long</mat-icon> {{ 'Consulta de solicitudes' | translate }}
+            <mat-icon class="sidenav-icon">receipt_long</mat-icon> {{ 'Solicitudes pendientes' | translate }}
         </a>
         
-       
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/register']">
+            <mat-icon class="sidenav-icon">receipt_long</mat-icon> {{ 'Registrar empleado' | translate }}
+        </a>
         <mat-menu #solicitudes="matMenu">
             <a mat-menu-item [routerLinkActive]="'active'" [routerLink]="['/section1']">Ingresar solicitud</a>
             <a mat-menu-item [routerLinkActive]="'active'" [routerLink]="['/consultar-solicitud']">Consultar solicitud</a>
