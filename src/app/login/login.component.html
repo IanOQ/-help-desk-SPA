@@ -24,24 +24,14 @@
                     </mat-form-field>
                 </div>
             </div>
-            <div fxFlex  fxLayout="row" fxLayout.lt-md="column" style="margin: 20px 0 30px 0">
-                <div fxFlex>
-                    <mat-checkbox color="primary">Recordar</mat-checkbox>
-                </div>
-                <div fxFlex  fxLayoutAlign="end">
-                    <a href="javascript:void(0)">Olvidé mi contraseña</a>
-                </div>
-            </div>
-            <div fxFlex  fxLayout="row" fxLayout.lt-md="column">
+           
                 <div fxFlexFill>
                     <button mat-raised-button color="primary" class="w-100" (click)="onLogin()">Login</button>
-                    <p>¿Aún no tienes una cuenta?
-                        <a  [routerLinkActive]="'active'" [routerLink]="['/signup']"> Registrarse</a>
-                      </p>
+                  
                 </div>
                 
-            </div>
+            
 
         </form>
-    </div>
+            </div>
 </div>
