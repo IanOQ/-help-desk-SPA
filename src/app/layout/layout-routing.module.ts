@@ -6,7 +6,7 @@ import { registerComponent } from './register/register.component';
 import { LayoutComponent } from './layout.component';
 import { Screen2Component } from './screen2/screen2.component';
 import { UpdateComponent } from './update/update.component';
-//import { UpdateComponent } from './update/update.component';
+// import { UpdateComponent } from './update/update.component';
 
 
 const routes: Routes = [
