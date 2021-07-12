@@ -1,0 +1,44 @@
+
+<div>
+    <h1 class="title centered">
+  
+     Actualizar solicitud
+  
+    </h1>
+</div>
+  <br> <br/> 
+  <div>
+    <form>
+      
+    <div class="form-row centered">
+        <div class="form-group col-md-4">
+          <label for="inputSupport">Suportista asignado</label>
+          <select id="inputSupport" class="form-control">
+            <option selected>Seleccione al soportista encargado</option>
+            <option>Pepe</option>
+            <option>Lolo</option>
+            <option>Carmelo</option>
+            <option>Lucho</option>
+          </select>
+        </div>
+    </div>
+        <div class="form-row centered">
+            <div class="form-group col-md-4">
+              <label for="stateInput">Estado de la solicitud</label>
+              <select id="stateInput" class="form-control">
+                <option selected>Seleccione el estado</option>
+                <option>Ingresado</option>
+                <option>Asignado</option>
+                <option>Finalizado</option>
+              </select>
+            </div>
+        </div>
+        <br> <br/> 
+        <div class="centered">
+          <button type="submit" class="btn btn-primary mr-1 add-margin">Actualizar</button>
+          <button type="submit" class="btn btn-primary add-margin" [routerLinkActive]="'active'" [routerLink]="['/detail']">
+            Cancelar
+          </button>
+        </div>
+     </form>​
+  </div>

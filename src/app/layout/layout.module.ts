@@ -11,6 +11,7 @@ import { Screen2Component } from './screen2/screen2.component';
 import { DetailComponent } from './detail/detail.component';
 import { registerComponent } from './register/register.component';
 import { CommentsComponent } from './comments/comments.component';
+import { UpdateComponent } from './update/update.component';
 
 @NgModule({
     imports: [
@@ -27,7 +28,8 @@ import { CommentsComponent } from './comments/comments.component';
         SidebarComponent,
         DetailComponent,
         CommentsComponent,
-        registerComponent
+        registerComponent,
+        UpdateComponent
     ]
 
 })

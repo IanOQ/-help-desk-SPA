@@ -2,7 +2,7 @@
 <div>
   <h1 class="title centered">
 
-    Lista del reportes
+    Solicitudes registradas
 
   </h1>
 </div>
@@ -18,10 +18,11 @@
   <thead>
       <tr>
           <th>No. Solicitud</th>
-          <th>Servicio</th>
+          <th>Soportista asignado</th>
+          <th>Clasificación</th>
           <th>Fecha y hora</th>
           <th>Estado</th>
-          <th>Detalles</th>
+          <th>Opción</th>
           <!--th>Soportista</th-->
         </tr>
   </thead>
@@ -34,12 +35,12 @@
         <td>{{ s.nationalityName  }}</td>
         <td>{{ s.majorName  }}</td-->
        <td> 12345</td>
-        <td> Cable</td>
+        <td> Juan Perez</td>
+        <td> A </td>
         <td> 7/7/21</td>
         <td>En espera</td>
          <td>
-          <a [routerLink]="['/detail']"> Ver </a>
-      
+          <a [routerLink]="['/detail']"> Detalles </a>
         </td>
        
 

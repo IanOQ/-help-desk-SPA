@@ -1,31 +1,42 @@
 
 <section>
   <mat-card>
-      <mat-card-title class="title">Detalles del reporte</mat-card-title>
+      <mat-card-title class="title">Información</mat-card-title>
       <mat-card-content>
-          <mat-label>No. Solicitud:</mat-label>
-          <br><br/>
-          <mat-label>Descripción:</mat-label>
-          <br><br/>
-          <mat-label>Fecha y hora:</mat-label>
-          <br><br/>
-          <mat-label>Estado:</mat-label>
-          <br><br/>
-          <mat-label>Soportista:</mat-label>
-        
-        
-          <div class="form-group col-md-4">         
-                 <select id="inputState" class="form-control">
-              <option selected>Seleccione el soportista</option>
-              <option>Pepe</option>
-              <option>Ruperto</option>
-              <option>Carmelo</option>
-              <option>Sandro</option>
-            </select>
-          </div>
-        
+        <mat-card-subtitle>Datos del cliente</mat-card-subtitle>
+         <div>
+            <mat-label>No. Solicitud:</mat-label>
+            <br><br/>
+            <mat-label>Nombre:</mat-label>
+            <br><br/>
+            <mat-label>Apellidos:</mat-label>
+            <br><br/>
+            <mat-label>Correo electrónico:</mat-label>
+            <br><br/>
+            <mat-label>Teléfono:</mat-label>
+            <br><br/>
+            <mat-label>Segundo contacto:</mat-label>
+            <br><br/>
+            <mat-label>Dirección:</mat-label>
+         </div>
         </mat-card-content>
-  </mat-card>
+         <mat-card-content display="flex">
+            <mat-card-subtitle>Datos de la solicitud</mat-card-subtitle>
+             <div>
+                <!--div fxLayout="column" fxFlex="1 0 0"-->
+                <mat-label>Estado:</mat-label>
+                <br><br/>
+                <mat-label>Email del contacto:</mat-label>
+                <br><br/>
+                <mat-label>Teléfono del contacto:</mat-label>
+                <br><br/>
+                <mat-label>Soportista Asignado:</mat-label>
+                <br><br/>
+                <mat-button-toggle [routerLink]="['/update']">Editar</mat-button-toggle>
+             </div>
+        
+            </mat-card-content>
+        </mat-card>
 </section>
 
 <section class="add-margin">

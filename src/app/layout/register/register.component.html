@@ -1,50 +1,47 @@
+
 <div>
+  <h1 class="title centered">
 
-  <a>
+    Registrar usuario
 
-Registrar usuario
-
-  </a>
-
-
+  </h1>
 </div>
-
-
-
-
+<br> <br/> 
 <div>
   <form>
-    <div class="form-row">
+    <div>
+    <div class="form-row centered">
       <div class="form-group col-md-6">
         <label for="inputdescr">Nombre</label>
-        <input type="text" class="form-control" id="request-description" placeholder="Nombre">
+        <input type="text" class="form-control" id="request-description" placeholder="Descripción breve de la solicitud">
       </div>
+    </div>
+    <div class="form-row centered">
       <div class="form-group col-md-6">
         <label for="inputphone">Primer Apellido</label>
-        <input type="text" class="form-control" id="contact-phone" placeholder="Primer Apellido">
+        <input type="text" class="form-control" id="contact-phone" placeholder="Teléfono de contacto">
       </div>
     </div>
-    <div class="form-group col-md-6">
-      <label for="inputemail">Segundo Apellido</label>
-      <input type="email" class="form-control" id="contact-email" placeholder="Segundo Apellido">
+    <div class="form-row centered">
+      <div class="form-group col-md-6">
+        <label for="inputphone">Segundo Apellido</label>
+        <input type="text" class="form-control" id="contact-phone" placeholder="Teléfono de contacto">
+      </div>
     </div>
+    <div class="form-row centered">
     <div class="form-group col-md-6">
-      <label for="inputAddress">Correo Electronico</label>
-      <input type="text" class="form-control" id="reference-address" placeholder="Correo Electronico">
+      <label for="inputemail">Correo electrónico</label>
+      <input type="email" class="form-control" id="contact-email" placeholder="Correo de contacto">
     </div>
+  </div>
+  <div class="form-row centered">
     <div class="form-group col-md-6">
       <label for="inputAddress">Contraseña</label>
-      <input type="text" class="form-control" id="reference-address" placeholder="Contraseña">
+      <input type="password" class="form-control" id="user-password" placeholder="Nueva Contraseña">
     </div>
-
-    <div class="form-group col-md-6">
-      <label for="inputAddress">Asignar como Supervisor           </label>
-      <input type="checkbox">
-    </div>
-
- 
-
-      <div class="form-group col-md-4">
+  </div>
+  <div class="form-row centered">
+      <div class="form-group col-md-6">
         <label for="inputservice">Puesto</label>
         <select id="inputState" class="form-control">
           <option selected>Seleccione un servicio</option>
@@ -54,12 +51,24 @@ Registrar usuario
           <option>Telefonía fija</option>
         </select>
       </div>
-    
-        <button type="submit" class="btn btn-primary mr-1">Registrar</button>
-    
-    
-        <button type="submit" class="btn btn-primary">Cancelar</button>
-      
-   
+    </div>
+    <br> <br/> 
+    <div class="form-row centered">
+      <div class="form-group col-md-6">
+          <div fxFlex>
+              <mat-checkbox color="primary">Asignar como Supervisor</mat-checkbox>
+          </div>
+      </div>
+        <!--label class="add-margin">Asignar como Supervisor</label>
+        <input  type="checkbox"-->
+    </div>
+      <br> <br/> 
+      <div class="centered">
+        <button type="submit" class="btn btn-primary mr-1 add-margin">Registrar</button>
+        <button type="submit" class="btn btn-primary add-margin" [routerLinkActive]="'active'" [routerLink]="['/dashboard']">
+          Cancelar
+        </button>
+      </div>
+    </div>
   </form>​
 </div>
